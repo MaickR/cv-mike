@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike's Dev Portafolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/899c5b95b3.js" crossorigin="anonymous"></script>
+
+    <!--Font para titulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+    <!--Font para textos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+
+    
+
+    
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="img/logo1.png" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Inicio</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#services">Habilidades</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Desarollo Web</p>
+          <h1>
+            Me llamo <span>Mike</span> <br />
+            y construyo cosas <br> para la Web
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--------------SECCION SOBRE MI----------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/user.png" alt="Mike's Photo" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="subtitle">Sobre mi</h2>
+            <p class="about-me">
+              Tengo 22 años y soy un desarrollador junior apasionado por la tecnologia y el desarrollo multimedia.
+              Disfruto de la musica, la filosifia, la ciencia y los videojuegos. 
+
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Habilidades
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experiencia
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">
+                Educacion
+              </p>
+            </div>
+            <!--SKILLS-->
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Desarrollo Web Front-end</span><br /> conocimiento en HTML5, CSS3, JS, Bootstrap5 y ReactJS
+                </li>
+                <li>
+                  <span>Diseño Multimedia</span><br />Uso de herramientas Adobe: Premiere, InDesign, Photoshop, Illustrator.
+                </li>
+                <li>
+                  <span>SQL</span><br />Manejo de SQL en ORACLE, MySQL y SAS; NoSQL en MongoDB.
+                </li>
+              </ul>
+            </div>
+            <!--experiencia-->
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>TODO EN COMERCIO INTERNACIONAL S.A.S</span><br /><i>16 junio 2020 - 20 julio 2021</i>  </li>
+                <li>
+                  <span>MISION TEMPORAL LTDA. - BANCO DE BOGOTÁ</span><br /> <i>23 agosto 2021 - 22 agosto 2022</i>
+                </li>
+                <li>
+                  <span>MEGALINEA - BANCO DE BOGOTA</span><br /> <i>01 septiembre 2022 - Actualidad</i>
+                </li>
+              </ul>
+            </div>
+            <!--educacion-->
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>Tapsandes</span><br />Bachiller academico - 2017</li>
+                <li>
+                  <span>Servicio Nacional de Aprendizaje</span><br />Tecnologo en Analisis y Desarollo de sistemas de informacion - 2020
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--servicios-------------------------->
+
+    <div id="services">
+      <div class="container">
+        <h2 class="subtitle">Mis Servicios</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code" style="color: #efeaea"></i>
+            <h2>Desarollo Web</h2>
+            <p class="services-p">
+              Construccion de paginas web con uso de tecnologias HTML5+ frameworks como Bootstrap5, uso de liberias como ReactJS.
+              Diseño y construccion de paginas Responsive para visualizar en todos los dispositivos con tecnologias modernas y de alto nivel.
+            </p>
+            <!--<a href="">Learn more</a>-->
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-database" style="color: #efeaea"></i>
+            <h2>Consultas SQL</h2>
+            <p class="services-p">
+              Uso de lenguaje de Consultas SQL con SGBD ORACLE, MySQL y SAS, manejo de datos, integracion con excel. <br>
+               Manejo de NoSQL en MongoDB.
+            </p>
+            <!--<a href="">Learn more</a>-->
+          </div>
+          <div>
+            <i class="fa-solid fa-camera" style="color: #efeaea"></i>
+            <h2>Diseño Multimedia</h2>
+            <p class="services-p">
+              Creacion de templates y recursos en herramientas como Figma y Photoshop. <br> edicion de video e imagen en herramientas Adobe.
+            </p>
+            <!--<a href="">Learn more</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--POTAFOLIO------------------>
+
+    <div id="portafolio">
+      <div class="container">
+        <h2 class="subtitle">Mi Trabajo</h2>
+        <div class="work-list">
+          <!--DEBE COPIAR Y PEGAR EL DIV.WORK SI QUIERE CREAR MAS LISTAS-->
+          <div class="work">
+            <img src="img/work-1.png" />
+            <div class="layer">
+              <h3>Google Clon</h3>
+              <p>
+                Clon de de la pagina principal del famosos buscador Google. <br>
+                Contiene un estilo de pantalla personalizado. <br> para mas detalles vea el README en mi pagina de Github.
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square" style="color: #0b4eb4;"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.png" />
+            <div class="layer">
+              <h3>Game Store</h3>
+              <p>
+                Pagina principal de una tienda/Store de gaming dedicada al alquiler y venta de videojuegos.
+                Para mas detalle vea el README en mi pagina de Github.
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square" style="color: #0b4eb4;"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-3.png" />
+            <div class="layer">
+              <h3>Pinterest Clon</h3>
+              <p>
+                Clon de la famosa pagina de imagenes Pinterest.
+                Para mas detalle vea el README en mi pagina de Github.
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square" style="color: #0b4eb4;"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.png" />
+            <div class="layer">
+              <h3>TOP Casas del terror</h3>
+              <p>
+                Podra ver un TOP con casas y mansiones malditas o embrujadas a traves del planeta. 
+                Lo invito a averiguar mas en mi pagina de Github.
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square" style="color: #0b4eb4;"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.png" />
+            <div class="layer">
+              <h3>Revista Emprender</h3>
+              <p>
+              Una pagina web realizada en uno de mis primeros trabajos, podra ver los estilos, las animaciones y demas codigo generado
+              en esta plantilla, fue usada en produccion en mi estadia en la empresa. <br>
+              Lo invito a averiguar mas en mi pagina de Github.
+
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square" style="color: #0b4eb4;"></i></a>
+            </div>
+          </div>
+         
+        </div>
+        <a href="" class="btn">Ver mas</a>
+      </div>
+    </div>
+
+    <!--CONTACTO---------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contacta Conmigo</h2>
+            <p> <i class="fa-regular fa-envelope"></i> developer.maick@gmail.com</p>
+            <p> <i class="fa-sharp fa-solid fa-phone"></i> (+57)3114502476</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/maickreinoso"><i class="fa-brands fa-linkedin" style="color: #115cdf;"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=573114502476&text=Hola%20Mike%20,%20vi%20tu%20numero%20en%20el%20link%20de%20tu%20CV%20y%20quisiera%20contactar%20contigo%20"><i class="fa-brands fa-whatsapp" style="color: #1fd64d;"></i></a>
+              <a href="https://github.com/MaickR"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="img/CV.pdf"  class="btn btn2" download>Descarga mi CV</a>
+          </div>
+      
+
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Escribe tu Nombre" required>
+              <input type="email" name="email" placeholder="Escribe tu Email" required>
+              <textarea name="Message"  rows="6" placeholder="Enviame un mensaje!"></textarea>
+              <button type="submit" class="btn btn2">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Michael Reinoso Website </p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <!--<script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      
+    </script>-->
+
+    <!--<script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>-->
+  </body>
+</html>
